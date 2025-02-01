@@ -7,5 +7,5 @@ def rec_sum(L):
     
 
 if __name__ == "__main__":
-    L = [1, 2, 3, 4, 5]
+    L = [1, 2, 3, 4, 5, 6]
     print(f"The sum of the list {L} is: {rec_sum(L)}")
