@@ -9,4 +9,4 @@ def reverse_string(str_):
     
  
 if __name__ == '__main__':
-    print(reverse_string('pukukaka'))
+    print(reverse_string('puyfyja'))

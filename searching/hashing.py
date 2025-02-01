@@ -91,7 +91,7 @@ if __name__ == '__main__':
 
     table[2] = 3
 
-    table['catttt'] = 'vor'
+    table['catttt'] = 'vo'
 
     print(table['catttt'])
     print(table.size())
