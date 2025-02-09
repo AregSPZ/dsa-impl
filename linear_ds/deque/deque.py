@@ -1,7 +1,7 @@
 class Deque:
 
-    def __init__(self):
-        self._items = []
+    def __init__(self, items=[]):
+        self._items = [item for item in items]
 
     def add_front(self, item):
         self._items.append(item)

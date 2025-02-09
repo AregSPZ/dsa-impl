@@ -7,7 +7,7 @@ class Graph:
         # value - the vertex
         self.vertices = {}
 
-    def add_vert(self, key):
+    def add_vertex(self, key):
         '''Add a vertex into graph'''
         self.vertices[key] = Vertex(key)
     
@@ -19,13 +19,17 @@ class Graph:
             self.add_vertex(to_vert)
         self.vertices[from_vert].link(to_vert, weight)
 
-    def get_vert(self, key):
+    def get_vertex(self, key):
         '''Get the vertex under a certain key''' 
         return self.vertices.get(key, None)
 
     def get_vertices(self):
         '''Get the keys for all the vertices'''
         return self.vertices.keys()
+    
+    def size(self):
+        '''Get the number of vertices in graph'''
+        return len(self.vertices)
     
     def __contains__(self, key):
         # 'if vertkey in Graph'

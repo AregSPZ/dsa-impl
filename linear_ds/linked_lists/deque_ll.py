@@ -1,20 +1,22 @@
 from unordered_list import UnorderedList
 
-class DequeFromLinkedList:
+class DequeLL:
 
-    def __init__(self):
+    def __init__(self, items=[]):
         self._items = UnorderedList()
+        for item in items:
+            self._items.append(item)
 
-    def add_rear(self, item):
+    def addrear(self, item):
         self._items.insert(0, item)
 
-    def add_front(self, item):
+    def append(self, item):
         self._items.append(item)
     
-    def remove_rear(self):
+    def poprear(self):
         return self._items.pop(0)
 
-    def remove_front(self):
+    def pop(self):
         return self._items.pop()
     
     def is_empty(self):

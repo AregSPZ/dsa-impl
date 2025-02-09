@@ -3,6 +3,8 @@ class Vertex:
         # the id of a vertex and its adjacency list
         self.key = key
         self.adj = {}
+        # the color which shows the processing status
+        self.color = 'white'
 
     def get_weight(self, key):
         '''Get the weight of an edge'''
@@ -22,7 +24,7 @@ class Vertex:
             + str([x for x in self.adj.keys()])
         )
         
-    def get_all(self):
+    def get_neighbors(self):
         '''Get all the vertices linked to'''
         return self.adj.keys()
     
